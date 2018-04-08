@@ -1,6 +1,8 @@
 #ifndef INTEGER_H
 #define INTEGER_H
 
+#include <vector>
+
 class Integer {
 public:
     Integer(int a) {}
