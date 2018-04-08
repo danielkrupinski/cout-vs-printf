@@ -6,14 +6,14 @@
 class Integer {
 public:
     explicit Integer(int a);
-    void TestCout();
-    void TestPrintf();
-    void Print();
-    void ClearScreen();
+    void testCout();
+    void testPrintf();
+    void print();
+    void clearScreen();
 private:
     int amount {0};
-    std::vector<int> results_cout;
-    std::vector<int> results_printf;
+    std::vector<int> resultsCout;
+    std::vector<int> resultsPrintf;
 };
 
 #endif // INTEGER_H

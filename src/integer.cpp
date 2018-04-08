@@ -6,53 +6,53 @@
 Integer::Integer(int a)
     : amount{a}
 {
-    TestCout();
-    TestPrintf();
-    Print();
+    testCout();
+    testPrintf();
+    print();
 }
 
-void Integer::TestCout()
+void Integer::testCout()
 {
-    ClearScreen();
+    clearScreen();
     for (int i=0; i!=amount; ++i) {
         auto start = std::chrono::high_resolution_clock::now();
         for (int j=0; j!=1000000; ++j)
             std::cout << j;
         auto end = std::chrono::high_resolution_clock::now();
-        results_cout.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
+        resultsCout.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
     }
 }
 
-void Integer::TestPrintf()
+void Integer::testPrintf()
 {
-    ClearScreen();
+    clearScreen();
     for (int i=0; i!=amount; ++i) {
         auto start = std::chrono::high_resolution_clock::now();
         for (int j=0; j!=1000000; ++j)
             printf("%d",j);
         auto end = std::chrono::high_resolution_clock::now();
-        results_printf.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
+        resultsPrintf.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
     }
 }
 
-void Integer::Print()
+void Integer::print()
 {
-    ClearScreen();
+    clearScreen();
     for (int i=0; i!=amount; ++i)
-        std::cout << i+1 << ". cout: " << results_cout[i] << " ms printf: " << results_printf[i] << " ms\n";
+        std::cout << i+1 << ". cout: " << resultsCout[i] << " ms printf: " << resultsPrintf[i] << " ms\n";
 
-    int avg_cout {0};
-    int avg_printf {0};
+    int avgCout {0};
+    int avgPrintf {0};
 
-    for (auto& a : results_cout)
-        avg_cout+=a;
-    for (auto& b : results_printf)
-        avg_printf+=b;
+    for (auto& a : resultsCout)
+        avgCout+=a;
+    for (auto& b : resultsPrintf)
+        avgPrintf+=b;
 
-    std::cout << "Average: cout: " << avg_cout/amount << " ms printf: " << avg_printf/amount << " ms";
+    std::cout << "Average: cout: " << avgCout/amount << " ms printf: " << avgPrintf/amount << " ms";
 }
 
-void Integer::ClearScreen()
+void Integer::clearScreen()
 {
     std::cout << std::endl;
     #ifdef _WIN32
