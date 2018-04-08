@@ -4,6 +4,7 @@
 class Integer {
 public:
     Integer(int a) : amount{a} {}
+    void Test();
 private:
     int amount {0};
     std::vector<int> results;
