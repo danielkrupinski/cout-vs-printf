@@ -17,7 +17,7 @@ void Integer::TestCout()
         for (int j=0; j!=1000000; ++j)
             std::cout << j;
         auto end = std::chrono::high_resolution_clock::now();
-        results_cout.push_back(std::chrono::duration_cast<milliseconds>(end-start).count());
+        results_cout.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
     }
 }
 
@@ -28,7 +28,7 @@ void Integer::TestPrintf()
         for (int j=0; j!=1000000; ++j)
             printf("%d",j);
         auto end = std::chrono::high_resolution_clock::now();
-        results_printf.push_back(std::chrono::duration_cast<milliseconds>(end-start).count());
+        results_printf.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
     }
 }
 
