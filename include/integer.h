@@ -12,6 +12,7 @@ public:
 private:
     int amount {0};
     std::vector<int> results_cout;
+    std::vector<int> results_printf;
 };
 
 #endif // INTEGER_H
