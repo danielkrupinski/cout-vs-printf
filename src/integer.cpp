@@ -26,4 +26,8 @@ void Integer::Print()
         system("cls");
     #elif defined __linux__
         system("clear");
+    #endif
+
+    for (int i=0; i!=amount; ++i)
+        std::cout << i+1 << "ms" << std::endl;
 }
