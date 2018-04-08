@@ -22,5 +22,8 @@ void Integer::Test()
 
 void Integer::Print()
 {
-    
+    #ifdef _WIN32
+        system("cls");
+    #elif defined __linux__
+        system("clear");
 }
