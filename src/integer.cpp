@@ -34,6 +34,7 @@ void Integer::TestPrintf()
 
 void Integer::Print()
 {
+    std::cout << std::endl;
     #ifdef _WIN32
         system("cls");
     #elif defined __linux__
