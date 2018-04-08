@@ -5,7 +5,7 @@
 
 class Integer {
 public:
-    Integer(int a) {}
+    Integer(int a);
     void TestCout();
     void TestPrintf();
     void Print();
