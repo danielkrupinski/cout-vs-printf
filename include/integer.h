@@ -3,7 +3,7 @@
 
 class Integer {
 public:
-    Integer(int a) : amount{a} {}
+    Integer(int a) {}
     void Test();
     void Print();
 private:
