@@ -20,6 +20,8 @@ void Integer::TestCout()
         auto end = std::chrono::high_resolution_clock::now();
         results_cout.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
     }
+    using namespace std::chrono_literals;
+    std::this_thread::sleep_for(500ms);
 }
 
 void Integer::TestPrintf()
@@ -31,6 +33,8 @@ void Integer::TestPrintf()
         auto end = std::chrono::high_resolution_clock::now();
         results_printf.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
     }
+    using namespace std::chrono_literals;
+    std::this_thread::sleep_for(500ms);
 }
 
 void Integer::Print()
