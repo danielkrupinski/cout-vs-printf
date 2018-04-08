@@ -41,5 +41,5 @@ void Integer::Print()
     #endif
 
     for (int i=0; i!=amount; ++i)
-        std::cout << i+1 << ". cout: " << results_cout[i] << " ms printf: " << results_printf[i] << " ms";
+        std::cout << i+1 << ". cout: " << results_cout[i] << " ms printf: " << results_printf[i] << " ms\n";
 }
