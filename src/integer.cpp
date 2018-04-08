@@ -6,3 +6,8 @@ Integer::Integer(int a)
     Test();
     Print();
 }
+
+Integer::Test()
+{
+    
+}
