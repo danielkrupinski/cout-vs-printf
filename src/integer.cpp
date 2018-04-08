@@ -5,7 +5,8 @@
 Integer::Integer(int a)
     : amount{a}
 {
-    Test();
+    TestCout();
+    TestPrintf();
     Print();
 }
 
