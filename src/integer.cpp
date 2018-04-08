@@ -9,7 +9,7 @@ Integer::Integer(int a)
     Print();
 }
 
-Integer::Test()
+void Integer::Test()
 {
     for (int i=0; i!=amount; ++i) {
         auto start = std::chrono::high_resolution_clock::now();
