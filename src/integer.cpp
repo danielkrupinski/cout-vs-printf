@@ -9,5 +9,7 @@ Integer::Integer(int a)
 
 Integer::Test()
 {
-    
+    for (int i=0; i!=amount; ++i)
+        for (int i=0; i!=1000000; ++i);
+
 }
