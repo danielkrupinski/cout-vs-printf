@@ -6,7 +6,7 @@
 class Integer {
 public:
     Integer(int a) {}
-    void Test();
+    void TestCout();
     void Print();
 private:
     int amount {0};
