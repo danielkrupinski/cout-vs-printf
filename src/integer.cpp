@@ -48,4 +48,14 @@ void Integer::Print()
 
     for (int i=0; i!=amount; ++i)
         std::cout << i+1 << ". cout: " << results_cout[i] << " ms printf: " << results_printf[i] << " ms\n";
+
+    int avg_cout {0};
+    int avg_printf {0};
+
+    for (auto& a : results_cout)
+        avg_cout+=a;
+    for (auto& b : results_printf)
+        avg_printf+=b;
+
+    std::cout << "Average: cout: " << avg_cout/amount << " ms printf: " << avg_printf/amount << " ms";
 }
