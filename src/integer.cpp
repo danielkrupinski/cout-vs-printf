@@ -39,13 +39,6 @@ void Integer::TestPrintf()
 
 void Integer::Print()
 {
-    std::cout << std::endl;
-    #ifdef _WIN32
-        system("cls");
-    #elif defined __linux__
-        system("clear");
-    #endif
-
     for (int i=0; i!=amount; ++i)
         std::cout << i+1 << ". cout: " << results_cout[i] << " ms printf: " << results_printf[i] << " ms\n";
 
@@ -58,4 +51,14 @@ void Integer::Print()
         avg_printf+=b;
 
     std::cout << "Average: cout: " << avg_cout/amount << " ms printf: " << avg_printf/amount << " ms";
+}
+
+void Integer::ClearScreen()
+{
+    std::cout << std::endl;
+    #ifdef _WIN32
+        system("cls");
+    #elif defined __linux__
+        system("clear");
+    #endif
 }
