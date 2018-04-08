@@ -19,3 +19,8 @@ void Integer::Test()
         results.push_back(std::chrono::duration_cast<milliseconds>(end-start).count());
     }
 }
+
+void Integer::Print()
+{
+    
+}
