@@ -5,6 +5,7 @@ class Integer {
 public:
     Integer(int a) : amount{a} {}
     void Test();
+    void Print();
 private:
     int amount {0};
     std::vector<int> results;
