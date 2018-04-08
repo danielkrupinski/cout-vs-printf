@@ -16,7 +16,7 @@ void Integer::TestCout()
         for (int j=0; j!=1000000; ++j)
             std::cout << j;
         auto end = std::chrono::high_resolution_clock::now();
-        results.push_back(std::chrono::duration_cast<milliseconds>(end-start).count());
+        results_cout.push_back(std::chrono::duration_cast<milliseconds>(end-start).count());
     }
 }
 

@@ -10,7 +10,7 @@ public:
     void Print();
 private:
     int amount {0};
-    std::vector<int> results;
+    std::vector<int> results_cout;
 };
 
 #endif // INTEGER_H
