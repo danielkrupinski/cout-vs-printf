@@ -13,6 +13,7 @@ Integer::Integer(int a)
 
 void Integer::TestCout()
 {
+    ClearScreen();
     for (int i=0; i!=amount; ++i) {
         auto start = std::chrono::high_resolution_clock::now();
         for (int j=0; j!=1000000; ++j)
@@ -26,6 +27,7 @@ void Integer::TestCout()
 
 void Integer::TestPrintf()
 {
+    ClearScreen();
     for (int i=0; i!=amount; ++i) {
         auto start = std::chrono::high_resolution_clock::now();
         for (int j=0; j!=1000000; ++j)
@@ -39,6 +41,7 @@ void Integer::TestPrintf()
 
 void Integer::Print()
 {
+    ClearScreen();
     for (int i=0; i!=amount; ++i)
         std::cout << i+1 << ". cout: " << results_cout[i] << " ms printf: " << results_printf[i] << " ms\n";
 
