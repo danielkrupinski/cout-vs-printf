@@ -20,6 +20,17 @@ void Integer::TestCout()
     }
 }
 
+void Integer::TestPrintf()
+{
+    for (int i=0; i!=amount; ++i) {
+        auto start = std::chrono::high_resolution_clock::now();
+        for (int j=0; j!=1000000; ++j)
+            printf("%d",j);
+        auto end = std::chrono::high_resolution_clock::now();
+        results_cout.push_back(std::chrono::duration_cast<milliseconds>(end-start).count());
+    }
+}
+
 void Integer::Print()
 {
     #ifdef _WIN32
