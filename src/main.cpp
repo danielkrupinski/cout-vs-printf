@@ -7,7 +7,7 @@ int main()
     int tests {0};
     std::cin >> tests;
     Integer test {tests};
-    cin.ignore();
+    std::cin.ignore();
     getchar();
     return 0;
 }
