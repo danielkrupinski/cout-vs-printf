@@ -1,7 +1,6 @@
 #include "../include/integer.h"
 #include <iostream>
 #include <chrono>
-#include <thread>
 
 Integer::Integer(int a)
     : amount{a}
