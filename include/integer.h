@@ -4,7 +4,7 @@
 #include <vector>
 #include "test.h"
 
-class Integer {
+class Integer : public Test {
 public:
     explicit Integer(int a);
     void testCout();
