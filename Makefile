@@ -1,4 +1,4 @@
-CFLAGS=-O$(O) 
+CFLAGS=-O$(O)  -std=c++17
 O=2
 LFLAGS=
 OBJS=objs/main.o objs/integer.o objs/string.o
@@ -11,10 +11,10 @@ all: objs a.out
 	@ echo "    LINK ./a.out"
 	@ $(CXX) $(OBJS) -o "./a.out" $(LFLAGS)
 
-objs/main.o: src/main.cpp src/../include/integer.h
+objs/main.o: src/main.cpp src/../include/integer.h src/../include/test.h
 	@ echo "    CXX  src/main.cpp"
 	@ $(CXX) $(CFLAGS) -c "src/main.cpp" -o $@
-objs/integer.o: src/integer.cpp src/../include/integer.h
+objs/integer.o: src/integer.cpp src/../include/integer.h src/../include/test.h
 	@ echo "    CXX  src/integer.cpp"
 	@ $(CXX) $(CFLAGS) -c "src/integer.cpp" -o $@
 objs/string.o: src/string.cpp
