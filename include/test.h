@@ -3,7 +3,6 @@
 
 class Test {
 public:
-    virtual Test();
     virtual void testCout();
     virtual void testPrintf();
     virtual void print();
