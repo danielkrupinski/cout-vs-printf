@@ -4,7 +4,7 @@
 #include <vector>
 #include "test.h"
 
-class String {
+class String : public Test {
 public:
     explicit String(int a);
     void testCout();
