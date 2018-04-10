@@ -51,7 +51,7 @@ void String::print()
     std::cout << "Average: cout: " << avgCout/amount << " ms printf: " << avgPrintf/amount << " ms";
 }
 
-void String::clearScreen()
+void String::clearScreen() const
 {
     std::cout << std::endl;
     #ifdef _WIN32
