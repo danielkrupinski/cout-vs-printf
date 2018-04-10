@@ -3,10 +3,10 @@
 
 class Test {
 public:
-    virtual void testCout();
-    virtual void testPrintf();
-    virtual void print();
-    virtual void clearScreen();
+    virtual void testCout() = 0;
+    virtual void testPrintf() = 0;
+    virtual void print() = 0;
+    virtual void clearScreen() = 0;
     virtual ~Test() {};
 private:
     int amount {0};
