@@ -13,6 +13,7 @@ String::String(int a)
 void String::testCout()
 {
     clearScreen();
+
     for (int i=0; i!=amount; ++i) {
         auto start = std::chrono::high_resolution_clock::now();
         for (int j=0; j!=1000000; ++j)
@@ -25,6 +26,7 @@ void String::testCout()
 void String::testPrintf()
 {
     clearScreen();
+    
     for (int i=0; i!=amount; ++i) {
         auto start = std::chrono::high_resolution_clock::now();
         for (int j=0; j!=1000000; ++j)
