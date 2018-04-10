@@ -7,7 +7,7 @@ public:
     virtual void testPrintf();
     virtual void print();
     virtual void clearScreen();
-    virtual ~Test();
+    virtual ~Test() {};
 private:
     int amount {0};
     std::vector<int> resultsCout;
