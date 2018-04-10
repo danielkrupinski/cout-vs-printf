@@ -10,7 +10,7 @@ String::String(int a)
     print();
 }
 
-void Integer::testCout()
+void String::testCout()
 {
     clearScreen();
     for (int i=0; i!=amount; ++i) {
@@ -22,7 +22,7 @@ void Integer::testCout()
     }
 }
 
-void Integer::testPrintf()
+void String::testPrintf()
 {
     clearScreen();
     for (int i=0; i!=amount; ++i) {
@@ -34,7 +34,7 @@ void Integer::testPrintf()
     }
 }
 
-void Integer::print()
+void String::print()
 {
     clearScreen();
     for (int i=0; i!=amount; ++i)
@@ -51,7 +51,7 @@ void Integer::print()
     std::cout << "Average: cout: " << avgCout/amount << " ms printf: " << avgPrintf/amount << " ms";
 }
 
-void Integer::clearScreen()
+void String::clearScreen()
 {
     std::cout << std::endl;
     #ifdef _WIN32
