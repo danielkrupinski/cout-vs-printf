@@ -53,6 +53,7 @@ void String::print()
     std::cout << "Average: cout: " << avgCout/amount << " ms printf: " << avgPrintf/amount << " ms";
 }
 
+/*
 void String::clearScreen()
 {
     std::cout << std::endl;
@@ -62,3 +63,4 @@ void String::clearScreen()
         system("clear");
     #endif
 }
+*/
