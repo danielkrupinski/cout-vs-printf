@@ -51,6 +51,7 @@ void Integer::print()
     std::cout << "Average: cout: " << avgCout/amount << " ms printf: " << avgPrintf/amount << " ms";
 }
 
+/*
 void Integer::clearScreen()
 {
     std::cout << std::endl;
@@ -60,3 +61,4 @@ void Integer::clearScreen()
         system("clear");
     #endif
 }
+*/
