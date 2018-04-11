@@ -10,7 +10,7 @@ public:
     void testCout();
     void testPrintf();
     void print();
-    void clearScreen() const;
+    void clearScreen();
 private:
     int amount {0};
     std::vector<int> resultsCout;

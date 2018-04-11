@@ -26,7 +26,7 @@ void String::testCout()
 void String::testPrintf()
 {
     clearScreen();
-    
+
     for (int i=0; i!=amount; ++i) {
         auto start = std::chrono::high_resolution_clock::now();
         for (int j=0; j!=1000000; ++j)
@@ -53,7 +53,7 @@ void String::print()
     std::cout << "Average: cout: " << avgCout/amount << " ms printf: " << avgPrintf/amount << " ms";
 }
 
-void String::clearScreen() const
+void String::clearScreen()
 {
     std::cout << std::endl;
     #ifdef _WIN32
