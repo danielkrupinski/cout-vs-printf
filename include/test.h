@@ -6,7 +6,7 @@ public:
     virtual void testCout() = 0;
     virtual void testPrintf() = 0;
     virtual void print() = 0;
-    void clearScreen();
+    virtual void clearScreen();
     virtual ~Test() {};
 };
 
