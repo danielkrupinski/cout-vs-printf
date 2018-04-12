@@ -52,15 +52,3 @@ void String::print()
 
     std::cout << "Average: cout: " << avgCout/amount << " ms printf: " << avgPrintf/amount << " ms";
 }
-
-/*
-void String::clearScreen()
-{
-    std::cout << std::endl;
-    #ifdef _WIN32
-        system("cls");
-    #elif defined __linux__
-        system("clear");
-    #endif
-}
-*/
