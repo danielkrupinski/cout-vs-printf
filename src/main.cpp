@@ -29,7 +29,6 @@ int main()
         break;
     }
     }
-    //Integer test {tests};
     std::cin.ignore();
     getchar();
     return 0;
