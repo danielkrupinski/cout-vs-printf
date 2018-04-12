@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../include/integer.h"
 #include "../include/string.h"
+#include "../include/float.h"
 
 int main()
 {
@@ -9,7 +10,8 @@ int main()
     std::cin >> tests;
     std::cout << "Select mode:\n"
                  "1. Integer\n"
-                 "2. String\n";
+                 "2. String\n"
+                 "3. Float\n";
     int mode {0};
     std::cin >> mode;
 
@@ -20,6 +22,10 @@ int main()
     }
     case 2: {
         String test {tests};
+        break;
+    }
+    case 3: {
+        Float test {tests};
         break;
     }
     }
