@@ -1,7 +1,7 @@
 CFLAGS=-O$(O)  -std=c++17
 O=2
 LFLAGS=
-OBJS=objs/main.o objs/test.o objs/integer.o objs/string.o
+OBJS=objs/main.o objs/test.o objs/integer.o objs/float.o objs/string.o
 
 
 .PHONY: all
@@ -21,6 +21,9 @@ objs/test.o: src/test.cpp src/../include/test.h
 objs/integer.o: src/integer.cpp src/../include/integer.h src/../include/test.h
 	@ echo "    CXX  src/integer.cpp"
 	@ $(CXX) $(CFLAGS) -c "src/integer.cpp" -o $@
+objs/float.o: src/float.cpp src/../include/integer.h src/../include/test.h
+	@ echo "    CXX  src/float.cpp"
+	@ $(CXX) $(CFLAGS) -c "src/float.cpp" -o $@
 objs/string.o: src/string.cpp src/../include/string.h src/../include/test.h
 	@ echo "    CXX  src/string.cpp"
 	@ $(CXX) $(CFLAGS) -c "src/string.cpp" -o $@
