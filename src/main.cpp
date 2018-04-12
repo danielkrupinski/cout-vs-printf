@@ -10,8 +10,8 @@ int main()
     std::cin >> tests;
     std::cout << "Select mode:\n"
                  "1. Integer\n"
-                 "2. String\n"
-                 "3. Float\n";
+                 "2. Float\n"
+                 "3. String\n";
     int mode {0};
     std::cin >> mode;
 
@@ -21,11 +21,11 @@ int main()
         break;
     }
     case 2: {
-        String test {tests};
+        Float test {tests};
         break;
     }
     case 3: {
-        Float test {tests};
+        String test {tests};
         break;
     }
     }
