@@ -6,7 +6,7 @@
 
 class Integer : public Test {
 public:
-    explicit Integer(int a);
+    explicit Integer(int);
     void testCout();
     void testPrintf();
     void print();

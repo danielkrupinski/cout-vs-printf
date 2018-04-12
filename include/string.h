@@ -6,7 +6,7 @@
 
 class String : public Test {
 public:
-    explicit String(int a);
+    explicit String(int);
     void testCout();
     void testPrintf();
     void print();
