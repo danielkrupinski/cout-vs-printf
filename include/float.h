@@ -6,7 +6,7 @@
 
 class Float : public Test {
 public:
-    explicit Integer(int a);
+    explicit Float(int a);
     void testCout();
     void testPrintf();
     void print();
