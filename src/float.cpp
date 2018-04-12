@@ -2,7 +2,7 @@
 #include <iostream>
 #include <chrono>
 
-Integer::Integer(int a)
+Float::Float(int a)
     : amount{a}
 {
     testCout();
@@ -10,7 +10,7 @@ Integer::Integer(int a)
     print();
 }
 
-void Integer::testCout()
+void Float::testCout()
 {
     clearScreen();
     for (int i=0; i!=amount; ++i) {
@@ -22,7 +22,7 @@ void Integer::testCout()
     }
 }
 
-void Integer::testPrintf()
+void Float::testPrintf()
 {
     clearScreen();
     for (int i=0; i!=amount; ++i) {
@@ -34,7 +34,7 @@ void Integer::testPrintf()
     }
 }
 
-void Integer::print()
+void Float::print()
 {
     clearScreen();
     for (int i=0; i!=amount; ++i)
