@@ -6,13 +6,13 @@
 int main()
 {
     std::cout << "Enter amount of test: ";
-    int tests {0};
+    int tests;
     std::cin >> tests;
     std::cout << "Select mode:\n"
                  "1. Integer\n"
                  "2. Float\n"
                  "3. String\n";
-    int mode {0};
+    int mode;
     std::cin >> mode;
 
     switch (mode) {
