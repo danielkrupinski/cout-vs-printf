@@ -1,4 +1,4 @@
-#include "../include/integer.h"
+#include <integer.h>
 #include <iostream>
 #include <chrono>
 

@@ -1,4 +1,4 @@
-#include "../include/test.h"
+#include <test.h>
 #include <iostream>
 
 void Test::clearScreen()
