@@ -2,7 +2,7 @@
 #define STRING_H
 
 #include <vector>
-#include "test.h"
+#include <test.h>
 
 class String : public Test {
 public:
