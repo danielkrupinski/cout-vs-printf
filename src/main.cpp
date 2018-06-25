@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../include/integer.h"
-#include "../include/string.h"
-#include "../include/float.h"
+#include <integer.h>
+#include <string.h>
+#include <float.h>
 
 int main()
 {
