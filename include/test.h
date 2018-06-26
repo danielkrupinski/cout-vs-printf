@@ -9,7 +9,7 @@ public:
     virtual void testPrintf() = 0;
     virtual void print() = 0;
     void clearScreen();
-private:
+protected:
     int amount;
     std::vector<int> resultsCout;
     std::vector<int> resultsPrintf;
