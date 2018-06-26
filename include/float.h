@@ -9,7 +9,6 @@ public:
     explicit Float(int);
     void testCout();
     void testPrintf();
-    void print();
 };
 
 #endif // FLOAT_H

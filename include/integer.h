@@ -9,7 +9,6 @@ public:
     explicit Integer(int);
     void testCout();
     void testPrintf();
-    void print();
 };
 
 #endif // INTEGER_H

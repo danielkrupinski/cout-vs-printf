@@ -9,8 +9,8 @@ public:
     virtual ~Test() {};
     virtual void testCout() = 0;
     virtual void testPrintf() = 0;
-    virtual void print() = 0;
     void clearScreen() const;
+    void print();
 protected:
     int amount;
     std::vector<int> resultsCout;
