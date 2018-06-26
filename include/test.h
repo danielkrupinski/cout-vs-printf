@@ -1,6 +1,8 @@
 #ifndef TEST_H
 #define TEST_H
 
+#include <vector>
+
 class Test {
 public:
     explicit Test(int a) : amount{a} {};
