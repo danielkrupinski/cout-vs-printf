@@ -10,7 +10,7 @@ public:
     virtual void testCout() = 0;
     virtual void testPrintf() = 0;
     void clearScreen() const;
-    void print();
+    void print() const;
 protected:
     int amount;
     std::vector<int> resultsCout;

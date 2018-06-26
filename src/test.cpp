@@ -11,7 +11,7 @@ void Test::clearScreen() const
     #endif
 }
 
-void Test::print()
+void Test::print() const
 {
     clearScreen();
     for (int i = 0; i != amount; ++i)
