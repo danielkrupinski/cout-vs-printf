@@ -18,7 +18,7 @@ void Float::testCout()
         for (int j = 0; j != 1000000; ++j)
             std::cout << j + 0.12345;
         auto end = std::chrono::high_resolution_clock::now();
-        resultsCout.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
+        resultsCout.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count());
     }
 }
 
@@ -30,6 +30,6 @@ void Float::testPrintf()
         for (int j = 0; j!=1000000; ++j)
             printf("%.5f", j + 0.12345);
         auto end = std::chrono::high_resolution_clock::now();
-        resultsPrintf.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end-start).count());
+        resultsPrintf.push_back(std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count());
     }
 }
