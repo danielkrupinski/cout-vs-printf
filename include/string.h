@@ -10,10 +10,6 @@ public:
     void testCout();
     void testPrintf();
     void print();
-private:
-    int amount {0};
-    std::vector<int> resultsCout;
-    std::vector<int> resultsPrintf;
 };
 
 #endif // STRING_H

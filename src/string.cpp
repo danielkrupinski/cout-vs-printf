@@ -3,7 +3,7 @@
 #include <chrono>
 
 String::String(int a)
-    : amount{a}
+    : Test::Test{a}
 {
     testCout();
     testPrintf();

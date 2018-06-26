@@ -3,7 +3,7 @@
 #include <chrono>
 
 Integer::Integer(int a)
-    : amount{a}
+    : Test::Test{a}
 {
     testCout();
     testPrintf();

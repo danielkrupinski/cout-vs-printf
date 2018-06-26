@@ -3,7 +3,7 @@
 #include <chrono>
 
 Float::Float(int a)
-    : amount{a}
+    : Test::Test{a}
 {
     testCout();
     testPrintf();
