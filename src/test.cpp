@@ -20,9 +20,9 @@ void Test::print() const
     int avgCout {0};
     int avgPrintf {0};
 
-    for (auto& a : resultsCout)
+    for (const int& a : resultsCout)
         avgCout += a;
-    for (auto& b : resultsPrintf)
+    for (const int& b : resultsPrintf)
         avgPrintf += b;
 
     std::cout << "Average: cout: " << avgCout / amount << " ms printf: " << avgPrintf / amount << " ms";
